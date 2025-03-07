@@ -1,0 +1,98 @@
+@import url(variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: violet;
+    background: #f8f8f8;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Bienvenida y perfil */
+.welcome {
+    background-color: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome .text {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome h2 {
+    background-color: orchid;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-pic {
+    background-color: aqua;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Barra de búsqueda */
+.search-bar {
+    background-color: darkgoldenrod;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.search-box {
+    background-color: sienna;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 14px 16px;
+    position: relative;
+    border: 1px solid var(--color-4); 
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 35px;
+    background: transparent;
+    color: var(--color-3);
+}
+
+/* Ícono de búsqueda */
+.search-icon {
+    position: absolute;
+    left: 16px;
+    font-size: 16px;
+}
+
+
+/* Botón de filtros */
+.filter-btn {
+    background-color: var(--color-5);
+    border: none;
+    padding: 12px 12px;
+    border-radius: 10px;    
+    font-size: 18px;
+}
+
+
