@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Ropa</title>
+    <title>Home</title>
     <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
@@ -43,9 +43,12 @@
         </div>
         <main class="products-grid">
             <div class="product-card">
+                <div class="favorite" >
+                    <img src="../storage/img/heart-Icon.png" alt="">
+                </div>
                 <img src="../storage/img/ronal-1.png" alt="Producto 1">
                 <div class="product-info">
-                    <h3>Oversized black shirt with cuff design.</h3>
+                    <a href="../views/detail.html"><h3>Oversized black shirt with cuff design.</h3></a>
                     <p class="category">T-Shirt</p>
                     <div class="price-rating">
                         <p class="price">$212.99</p>
@@ -55,6 +58,9 @@
                 </div>
             </div>
             <div class="product-card tall">
+                <div class="favorite" >
+                    <img src="../storage/img/heart-white.png" alt="">
+                </div>
                 <img src="../storage/img/ronal-2.png" alt="Producto 2">
                 <div class="product-info">
                     <a href="../views/detail.html"><h3>Oversized grey shirt with interactive design</h3></a>
@@ -69,6 +75,9 @@
         </main>
         <div class="products-grid">
             <div class="product-card">
+                <div class="favorite" >
+                    <img src="../storage/img/heart-Icon.png" alt="">
+                </div>
                 <img src="../storage/img/ronal-3.png" alt="Producto 1">
                 <div class="product-info">
                     <a href="../views/detail.html"><h3>Grey shirt with cuffs and color-changing design</h3></a>
@@ -82,6 +91,9 @@
             </div>
         
             <div class="product-card tall">
+                <div class="favorite" >
+                    <img src="../storage/img/heart-Icon.png" alt="">
+                </div>
                 <img src="../storage/img/ronal-4.png" alt="Producto 2">
                 <div class="product-info">
                     <a href="../views/detail.html"> <h3>Oversized white shirt with interactive design.</h3></a>
@@ -94,5 +106,23 @@
                 </div>
             </div>
         </div>
+        <footer class="bottom-nav">
+            <a href="../views/home.html" class="nav-item">
+                <img src="../storage/img/home.png" alt="Inicio">
+            </a>
+            <a href="../views/checkout.html" class="nav-item">
+                <img src="../storage/img/cart.png" alt="Carrito">
+                <span class="notification-dot"></span> <!-- Punto rojo de notificación -->
+            </a>
+            <a href="#" class="nav-item">
+                <img src="../storage/img/Favourite.png" alt="Favoritos">
+            </a>
+            <a href="#" class="nav-item">
+                <img src="../storage/img/Account.png" alt="Perfil">
+            </a>
+        </footer>
+        
+
+        </footer>
 </body>
 </html>
