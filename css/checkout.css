@@ -77,7 +77,7 @@
     font-family: "EncodeSans-regular";
     font-size: 10px;
     margin-top: -10px;
-    color: #777;
+    color: var(--color-1);
 }
 
 .product-price {
