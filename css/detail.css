@@ -54,3 +54,83 @@
 .favorite-button {
     right: 16px;
 }
+
+/***********product-info*************/
+
+.product-info {
+    padding: 16px;
+    margin-top: 40px;
+}
+
+/* Título y Controles de Cantidad */
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-title {
+    font-family: "EncodeSans-SemiBold";
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Botones de cantidad */
+.quantity-controls {
+    font-family: "EncodeSans-bold";
+    display: flex;
+    align-items: center;
+    gap: 6.5px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.quantity-controls img {
+    width: 16px; /* Tamaño del botón */
+    height: 16px;
+    border: 1px solid var(--color-4); /* Borde sutil */
+    border-radius: 50%;
+    padding: 8px;
+}
+
+/* Sección de Rating */
+.rating {
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 16px;
+}
+
+.star-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.rating-value {
+    font-family: "EncodeSans-regular";
+    color: var(--color-12);
+    font-size: 12px;
+
+}
+
+.reviews {
+    font-family: "EncodeSans-regular";
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* Descripción */
+.product-description {
+    font-family: "EncodeSans-regular";
+    color: var(--color-1);
+    font-size: 12px;
+    margin-right: 71px;
+}
+
+.read-more {
+    font-family: "EncodeSans-bold";
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-2);
+    cursor: pointer;
+}
