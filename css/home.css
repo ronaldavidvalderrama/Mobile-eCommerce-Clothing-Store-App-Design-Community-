@@ -235,6 +235,11 @@ body {
 }
 
 /**************** FOOTER ***********************/
+
+.page-content {
+    padding-bottom: 40px; /* Espacio suficiente para ver el contenido en el footer */
+}
+
 .bottom-nav {
     box-shadow: 1px -35px 60px white; /* Sombra blanca */
     position: fixed;
