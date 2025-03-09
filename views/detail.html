@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail</title>
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/variables.css">
+</head>
+<body>
+    <main class="product-container">
+        <div class="product-image">
+            <img src="../storage/img/ronal-1.png" alt="shirt">
+            <button class="back-button">
+                <a href="../views/home.html"><img src="../storage/img/back-icon.png" alt="Back"></a>
+            </button>
+            <button class="favorite-button">
+                <img src="../storage/img/heart-black.png" alt="Favorite">
+            </button>
+        </div>
+        <div class="product-info">
+            <div class="product-header">
+                <h2 class="product-title">Oversized black shirt with cuff design.</h2>
+                <div class="quantity-controls">
+                    <img id="minus-btn" src="../storage/img/menos-icon.png" alt="Minus">
+                    <span id="quantity-value">1</span>
+                    <img id="plus-btn" src="../storage/img/mas-icon.png" alt="Plus">
+                </div>
+            </div>
+        
+            <div class="rating">
+                <img src="../storage/img/star.png" alt="Star" class="star-icon">
+                <span class="rating-value">5.0</span>
+                <a href="#" class="reviews">(7,932 reviews)</a>
+            </div>
+        
+            <p class="product-description">
+                Its simple and elegant shape makes it perfect for
+                those of you who like you who want minimalist
+                clothes  <span class="read-more">Read More...</span>
+            </p>
+        </div>
+        <div class="product-options">
+            <div class="size-selector">
+                <span>Choose Size</span>
+                <div class="sizes">
+                    <button class="size">S</button>
+                    <button class="size">M</button>
+                    <button class="size active">L</button>
+                    <button class="size">XL</button>
+                </div>
+            </div>
+        
+            <div class="color-selector">
+                <span>Color</span>
+                <div class="colors">
+                    <button class="color" style="background-color: var(--color-1);"></button>
+                    <button class="color" style="background-color: var(--color-10);"></button>
+                    <button class="color" style="background-color: var(--color-2);"></button>
+                </div>
+            </div>
+        </div>
+    </main>    
+
+    <!-- Aquí agregamos el script -->
+    <script src="../js/Components/detail.js"></script>
+</body>
+</html>

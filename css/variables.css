@@ -10,24 +10,26 @@
     --color-9: #347EFB;
     --color-10: #433F40;
     --color-11: #171516;
+    --color-12: #878787;
+    --color-13: #F6F6F6;
 }
 
 @font-face {
     font-family: "EncodeSans-Regular";
-    src: url(../storage/font/encode_sans/EncodeSans-Regular.ttf);
+    src: url(../storage/font/Encode_Sans/static/EncodeSans-Regular.ttf);
 }
 
 @font-face {
     font-family: "EncodeSans-Bold";
-    src: url(../storage/font/encode_sans/EncodeSans-Bold.ttf);
+    src: url(../storage/font/Encode_Sans/static/EncodeSans-Bold.ttf);
 }
 
 @font-face {
     font-family: "EncodeSans-Medium";
-    src: url(../storage/font/encode_sans/EncodeSans-Medium.ttf);
+    src: url(../storage/font/Encode_Sans/static/EncodeSans_Condensed-Medium.ttf);
 }
 
 @font-face {
     font-family: "EncodeSans-SemiBold";
-    src: url(../storage/font/encode_sans/EncodeSans-SemiBold.ttf);
+    src: url(../storage/font/Encode_Sans/static/EncodeSans_Expanded-SemiBold.ttf);
 }
