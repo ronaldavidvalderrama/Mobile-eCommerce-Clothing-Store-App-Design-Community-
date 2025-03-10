@@ -101,30 +101,68 @@ body {
 .filter-buttons {
     display: flex;
     gap: 16px;
-    margin-top: 32px;
     overflow-x: scroll; /* Permite scroll en pantallas pequeñas */
-    padding-bottom: 5px;
 }
 
+/* Botones de filtro */
 /* Botones de filtro */
 .filter {
     font-family: "EncodeSans-medium";
     background-color: var(--color-6);
     display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid var(--color-4);
-    gap: 4px;
-    color: #333;
-    font-size: 12px;
-    padding: 12px 8px;
-    border-radius: 10px;
+    flex: 1;
+    gap: 6px;
+    font-size: 14px;    
+    padding: 14px 12px;
+    border-radius: 12px;
     white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+    transition: all 0.3s ease-in-out; /* Transición suave */
 }
 
 /* Botón activo */
 .filter.active {
-    background: #222;
-    color: var(--color-6);
+    background: #131111;  /* Fondo oscuro */
+    color: #fff;  /* Texto blanco */
+    border: 1px solid #fff; /* Borde blanco */
 }
+
+/* Efecto hover */
+.filter:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Un gris claro */
+    border-color: #131111;
+}
+
+/* Invertir solo las imágenes normales (no blancas) */
+.filter.active img:not(.invertible-icon) {
+    filter: invert(1) brightness(1000%);
+}
+
+/* Espaciado y tamaño de imágenes */
+.filter img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Ajuste para la imagen de "All Items" cuando NO está seleccionada */
+.filter img.invertible-icon {
+    filter: invert(1); /* Hace que la imagen blanca se vea negra */
+}
+
+/* Pero cuando está activa, la imagen se mantiene sin inversión */
+.filter.active img.invertible-icon {
+    filter: invert(0);
+}
+
+
+
+
+
+
+
+
 
 .filter img {
     width: 18px;
