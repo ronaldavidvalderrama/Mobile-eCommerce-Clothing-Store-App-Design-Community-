@@ -39,7 +39,6 @@ body {
 .welcome h2 {
     font-family: "EncodeSans-Bold";
     font-size: 16px;
-    font-weight: bold;
 }
 
 .profile-pic {
@@ -75,7 +74,6 @@ body {
     font-size: 16px;
     padding-left: 35px;
     background: transparent;
-    color: var(--color-3);
 }
 
 /* Ícono de búsqueda */
@@ -101,10 +99,9 @@ body {
 .filter-buttons {
     display: flex;
     gap: 16px;
-    overflow-x: scroll; /* Permite scroll en pantallas pequeñas */
+    overflow-x: scroll;
 }
 
-/* Botones de filtro */
 /* Botones de filtro */
 .filter {
     font-family: "EncodeSans-medium";
@@ -124,14 +121,14 @@ body {
 
 /* Botón activo */
 .filter.active {
-    background: #131111;  /* Fondo oscuro */
-    color: #fff;  /* Texto blanco */
-    border: 1px solid #fff; /* Borde blanco */
+    background: #131111;
+    color: #fff;
+    border: 1px solid #fff; 
 }
 
 /* Efecto hover */
 .filter:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Un gris claro */
+    background-color: rgba(0, 0, 0, 0.3); /* Un gris claro */
     border-color: #131111;
 }
 
@@ -146,22 +143,13 @@ body {
     height: 20px;
 }
 
-/* Ajuste para la imagen de "All Items" cuando NO está seleccionada */
 .filter img.invertible-icon {
-    filter: invert(1); /* Hace que la imagen blanca se vea negra */
+    filter: invert(1);
 }
 
-/* Pero cuando está activa, la imagen se mantiene sin inversión */
 .filter.active img.invertible-icon {
     filter: invert(0);
 }
-
-
-
-
-
-
-
 
 
 .filter img {
