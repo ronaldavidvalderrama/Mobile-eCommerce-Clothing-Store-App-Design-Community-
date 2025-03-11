@@ -1,0 +1,313 @@
+@import url(variables.css);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/***********main*************/
+
+.product-container {
+    margin-top: 24px;
+}
+
+.product-image {
+    position: relative;
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 400px;
+    
+}
+
+.product-image img {
+    width: 100%;
+    height: 110%;
+    border-radius: 25px;
+    object-fit: cover;
+    
+}
+
+.back-button, .favorite-button {
+    position: absolute;
+    top: 16px;
+    width: 40px; 
+    height: 40px;
+    background: white;
+    border: none;
+    border-radius: 50%; /* Hace el fondo circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.back-button img, .favorite-button img {
+    width: 24px; /* Ajusta el tamaño del ícono */
+    height: 24px;
+}
+
+.back-button {
+    left: 16px;
+}
+
+.favorite-button {
+    right: 16px;
+}
+
+/***********product-info*************/
+
+.product-info {
+    padding: 16px;
+    margin-top: 40px;
+}
+
+/* Título y Controles de Cantidad */
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-title {
+    font-family: "EncodeSans-SemiBold";
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Botones de cantidad */
+.quantity-controls {
+    font-family: "EncodeSans-bold";
+    display: flex;
+    align-items: center;
+    gap: 6.5px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.quantity-controls img {
+    width: 16px; /* Tamaño del botón */
+    height: 16px;
+    border: 1px solid var(--color-4); /* Borde sutil */
+    border-radius: 50%;
+    padding: 8px;
+}
+
+/* Sección de Rating */
+.rating {
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 16px;
+}
+
+.star-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.rating-value {
+    font-family: "EncodeSans-regular";
+    color: var(--color-12);
+    font-size: 12px;
+
+}
+
+.reviews {
+    font-family: "EncodeSans-regular";
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* Estilos base */
+.product-description {
+    font-family: "EncodeSans-regular";
+    color: var(--color-1);
+    font-size: 12px;
+    margin-right: 90px;
+}
+
+/* Ocultar texto adicional por defecto */
+.more-text {
+    display: none;
+}
+
+/* Estilo del botón "Read More..." */
+.read-more {
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+.read-more {
+    font-family: "EncodeSans-bold";
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-2);
+    cursor: pointer;
+}
+
+/***********product-options*************/
+
+.product-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--color-13);
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.size-selector, .color-selector {
+    margin-bottom: 100px;
+    font-family: "EncodeSans-bold";
+    font-size: 12px;
+    color: var(--color-2);
+    display: flex;
+    margin-top: 16px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sizes, .colors {
+    display: flex;
+    gap: 8px;
+}
+
+
+.size {
+    color: var(--color-5);
+    font-family: "EncodeSans-regular";
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid var(--color-4);
+    background: var(--color-6);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cuando el botón está seleccionado */
+.size.selected {
+    background: var(--color-5); /* Cambia el fondo al color principal */
+    color: var(--color-6); 
+    border: 1px solid var(--color-5);
+}
+
+
+.color {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid transparent; /* Sin borde por defecto */
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Agregar un efecto cuando se seleccione */
+.color:focus-within,
+.color:hover {
+    border: 2px solid var(--color-13); 
+}
+
+
+/***********footer*************/
+
+.botton-cart {
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    background: var(--color-5);
+    padding: 15px 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+.cart-icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cart-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.info {
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.info a {
+    font-family: "EncodeSans-bold";
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-6);
+    font-size: 14px;
+}
+
+.discount a {
+    font-family: "EncodeSans-regular";
+    text-decoration: line-through;
+    color: var(--color-6);
+    font-size: 10px;
+}
+
+/* ======== MODAL DE CONFIRMACIÓN ======== */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.modal-buttons button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#cancelModal {
+    background: var(--color-4);
+    color: var(--color-6);
+}
+
+#confirmAddToCart {
+    background: var(--color-5);
+    color: var(--color-6);
+}
