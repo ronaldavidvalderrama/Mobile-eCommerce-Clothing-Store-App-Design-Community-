@@ -36,8 +36,9 @@
         
             <p class="product-description">
                 Its simple and elegant shape makes it perfect for
-                those of you who like you who want minimalist
-                clothes  <span class="read-more">Read More...</span>
+                those of you who like minimalist clothes. 
+                <span class="more-text">This shirt is made of high-quality cotton, giving it a soft feel and lasting durability.</span>
+                <span class="read-more">Read More...</span>
             </p>
         </div>
         <div class="product-options">
@@ -46,7 +47,7 @@
                 <div class="sizes">
                     <button class="size">S</button>
                     <button class="size">M</button>
-                    <button class="size active">L</button>
+                    <button class="size">L</button>
                     <button class="size">XL</button>
                 </div>
             </div>
@@ -61,17 +62,30 @@
             </div>
         </div>
     </main>
-    <footer class="botton-cart">
-        <div class="cart-icon">
-            <a href="../views/checkout.html"><img src="../storage/img/shop-car.png" alt="Cart"></a>
-            <div class="info">
-                <a href="../views/checkout.html">Add to Cart | $162.99</a>
-                <div class="discount">
-                    <a href="../views/checkout.html">$190.99</a>
-                </div>
+<!-- Botón que activa el modal -->
+<footer class="botton-cart">
+    <div class="cart-icon">
+        <a href="#" id="openModal"><img src="../storage/img/shop-car.png" alt="Cart"></a>
+        <div class="info">
+            <a href="#" id="openModalText">Add to Cart | $162.99</a>
+            <div class="discount">
+                <a href="#">$190.99</a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
+<!-- Modal de Confirmación -->
+<div id="cartModal" class="modal">
+    <div class="modal-content">
+        <p>Are you sure you want to add this item to your cart?</p>
+        <div class="modal-buttons">
+            <button id="cancelModal">Cancel</button>
+            <button id="confirmAddToCart">Confirm</button>
+        </div>
+    </div>
+</div>
+
 
     <!-- Aquí agregamos el script -->
     <script src="../js/Components/detail.js"></script>
