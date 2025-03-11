@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chekout</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header class="chekout-header">
+        <a href="../views/detail.html" class="back-button">
+            <img src="../storage/img/back-icon.png" alt="">
+        </a>
+        <h1 class="chekout-title">Chekout</h1>
+        <a href="#" class="menu-button">
+            <img src="../storage/img/Main Icon.png" alt="menu">
+        </a>
+    </header>
+    <main class="cart-container">
+        <div class="cart-item">
+            <img src="../storage/img/ronal-1.png" alt="Producto" class="product-img">
+            <div class="product-info">
+                <h3 class="product-title">Oversized black shirt with cuff design.</h3>
+                <p class="product-desc">Modern shirt</p>
+                <p class="product-price">$212.99</p>
+            </div>
+            <div class="product-actions">
+                <img src="../storage/img/menos-icon.png" alt="Menos" class="quantity-btn" onclick="changeQuantity(-1, this)">
+                <span class="quantity">4</span>
+                <img src="../storage/img/mas-icon.png" alt="Mas" class="quantity-btn" onclick="changeQuantity(1, this)">
+            </div>
+            <button class="more-options"><img src="../storage/img/punto-icon.png" alt="Más opciones"></button>
+        </div>
+
+    <hr class="separator"> <!-- Línea separadora -->
+
+        <div class="cart-item">
+            <img src="../storage/img/ronal-2.png" alt="Producto" class="product-img">
+            <div class="product-info">
+                <h3 class="product-title">Oversized grey shirt with interactive design</h3>
+                <p class="product-desc">Modern shirt</p>
+                <p class="product-price">$162.99</p>
+            </div>
+            <div class="product-actions">
+                <img src="../storage/img/menos-icon.png" alt="Menos" class="quantity-btn" onclick="changeQuantity(-1, this)">
+                <span class="quantity">4</span>
+                <img src="../storage/img/mas-icon.png" alt="Mas" class="quantity-btn" onclick="changeQuantity(1, this)">
+            </div>
+            <button class="more-options"><img src="../storage/img/punto-icon.png" alt="Más opciones"></button>
+        </div>
+    
+        <hr class="separator"> <!-- Línea separadora -->
+        
+        <script src="../js/Components/checkout.js"></script>
+        
+        <section class="shipping-info">
+            <h2 class="section-title">Shipping Information</h2>
+            <div class="payment-method">
+                <img src="../storage/img/visa.png" alt="Visa" class="payment-icon">
+                <p class="card-number">**** **** **** <p class="numero" >2143</p></p>
+                <button class="button"><img src="../storage/img/down-Icon.png" alt="Expand" class="expand-icon"></button>
+            </div>
+            <div class="summary">
+                <p>Total (9 items)<span class="amount">$1,014.95</p>
+                <p>Shipping Fee <span class="amount">$0.00</p>
+                <p>Discount <span class="amount">$0.00</p>
+                <hr class="separator">
+                <p class="subtotal">Sub Total <span class="amount">$1,014.95</p>
+            </div>
+        </section>
+    </main>
+    <footer class="checkout-footer">
+        <div class="pay-button-container">
+            <button id="payButton" class="pay-button">Pay</button>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/***********header**********/
+/***************************/
+.chekout-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+}
+
+.chekout-header .chekout-title {
+    font-size: 16px;
+    font-family: "EncodeSans-SemiBold";
+}
+
+.back-button,
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--color-4); /* Borde gris */
+
+}
+
+.back-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.menu-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/***********main************/
+/***************************/
+
+/* Contenedor del carrito */
+.cart-container {
+    padding: 10px 24px;
+}
+
+/* Cada producto en el carrito */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+/* Imagen del producto */
+.product-img {
+    width: 20%; /* Ajusta según tu diseño */
+    aspect-ratio: 1/2; /* Mantiene la imagen cuadrada */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Información del producto */
+.product-info {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    
+}
+
+.product-title {
+    font-family: "EncodeSans-semiBold";
+    font-size: 14px;
+    margin-right: -40px;
+}
+
+.product-desc {
+    font-family: "EncodeSans-regular";
+    font-size: 10px;
+    margin-top: -10px;
+    color: var(--color-1);
+}
+
+.product-price {
+    font-family: "EncodeSans-semiBold";
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+/* Acciones (imágenes de cantidad) */
+.product-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 60px;
+    margin-right: -30px;
+    
+}
+
+.product-actions img {
+    width: 16px;
+    height: 16px;
+}   
+
+.quantity-btn {
+    border: 1px solid var(--color-4); /* Borde gris */
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+/* Botón de más opciones (⋮) */
+.more-options {
+    margin-bottom: 80px;
+    background: none;
+    border: none;
+}
+
+.more-options img {
+    width: 24px;
+    height: 24px;
+}
+
+.separator {
+    border: 1px solid var(--color-12); /* Borde gris */
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+
+/***********shipping-info****/
+/***************************/
+
+.section-title {
+    font-size: 14px;
+    font-family: "EncodeSans-semiBold";
+    margin-bottom: 16px;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-0);
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.payment-icon {
+    width: 45px;
+    height: 30px;
+}
+
+.card-number {
+    font-size: 14px;
+    font-family: "EncodeSans-semiBold";
+    margin-left: 12px;
+}
+
+.numero {
+    font-size: 14px;
+    font-family: "EncodeSans-regular";
+    margin-right: 90px;
+}
+
+.expand-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: -20px;
+}
+
+.button {
+    border: none;
+}
+
+.summary {
+    margin-bottom: 100px;
+}
+.summary p {
+    font-family: "EncodeSans-regular";
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.amount {
+    font-family: "EncodeSans-semiBold";
+    font-size: 14px;
+}
+
+.subtotal {
+    font-size: 14px;
+}
+
+.summary hr{
+    margin-top: 16px;
+    margin-bottom: 24px;
+    
+}
+
+/***********footer**********/
+/***************************/
+.pay-button-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.pay-button {
+    width: 90%;
+    max-width: 400px;
+    height: 60px;
+    background: var(--color-5);
+    color: var(--color-12);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
