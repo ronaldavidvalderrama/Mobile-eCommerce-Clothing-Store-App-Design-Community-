@@ -15,8 +15,7 @@
     position: relative;
     margin-left: 16px;
     margin-right: 16px;
-    height: 400px;
-    
+    height: 430px;
 }
 
 .product-image img {
@@ -24,7 +23,7 @@
     height: 110%;
     border-radius: 25px;
     object-fit: cover;
-    
+    object-position: 50% 30%;   
 }
 
 .back-button, .favorite-button {
