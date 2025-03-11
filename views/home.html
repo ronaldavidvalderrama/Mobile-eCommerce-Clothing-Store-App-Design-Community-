@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="welcome">
+            <div class="text">
+                <p>Hello, Welcome 👋</p>
+                <h2>Ronal Valderrama</h2>
+            </div>
+            <img src="../storage/img/my-profile.png" alt="Foto de perfil" class="profile-pic">
+        </div>
+        <div class="search-bar">
+            <div class="search-box">
+                <input type="text" placeholder="Search clothes...">
+                <span class="search-icon">
+                    <img src="../storage/img/search-Icon.png" alt="">
+                </span>
+            </div>
+            <button class="filter-btn">
+                <img src="../storage/img/Filter.png" alt="">
+            </button>
+        </div>
+        <div class="filter-buttons">
+            <button class="filter active">
+                <img src="../storage/img/Default-Icon.png" alt="All Items" class="invertible-icon"> All Items
+            </button>
+            <button class="filter">
+                <img src="../storage/img/dress-icon.png" alt="Dress"> Dress
+            </button>
+            <button class="filter">
+                <img src="../storage/img/shirt-icon.png" alt="T-Shirt"> T-Shirt
+            </button>
+            <button class="filter">
+                <img src="../storage/img/jeans-Icon.png" alt="Pants"> Pants
+            </button>
+        </div>
+        
+        <script src="../js/Components/home.js"></script>
+        
+
+        </div>
+    </header>
+    <main class="products-grid">
+        <div class="product-card">
+            <button class="favorite" onclick="toggleFavorite(this)">
+                <img src="../storage/img/heart-Icon.png" alt="Favorito">
+            </button>
+            <img src="../storage/img/ronal-1.png" alt="Producto 1">
+            <div class="product-info">
+                <a href="../views/detail.html">
+                    <h3>Oversized black shirt with cuff design.</h3>
+                </a>
+                <p class="category">T-Shirt</p>
+                <div class="price-rating">
+                    <p class="price">$212.99</p>
+                    <img class="star" src="../storage/img/star.png" alt="Star">
+                    <p class="rating">5.0</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-card tall">
+            <button class="favorite" onclick="toggleFavorite(this)">
+                <img src="../storage/img/heart-Icon.png" alt="Favorito">
+            </button>
+            <img src="../storage/img/ronal-2.png" alt="Producto 2">
+            <div class="product-info">
+                <a href="../views/detail-2.html">
+                    <h3>Oversized grey shirt with interactive design</h3>
+                </a>
+                <p class="category">T-Shirt</p>
+                <div class="price-rating">
+                    <p class="price">$162.99</p>
+                    <img class="star" src="../storage/img/star.png" alt="Star">
+                    <p class="rating">5.0</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="products-grid">
+        <div class="product-card">
+            <button class="favorite" onclick="toggleFavorite(this)">
+                <img src="../storage/img/heart-Icon.png" alt="Favorito">
+            </button>
+            <img src="../storage/img/ronal-3.png" alt="Producto 1">
+            <div class="product-info">
+                <a href="../views/detail-3.html">
+                    <h3>Grey shirt with cuffs and color-changing design</h3>
+                </a>
+                <p class="category">T-Shirt</p>
+            </div>
+            <div class="price-rating">
+                <p class="price">212.99</p>
+                <img class="star" src="../storage/img/star.png" alt="Star">
+                <p class="rating">5.0</p>
+            </div>
+        </div>
+        <div class="product-card tall">
+            <button class="favorite" onclick="toggleFavorite(this)">
+                <img src="../storage/img/heart-Icon.png" alt="Favorito">
+            </button>
+            <img src="../storage/img/ronal-4.png" alt="Producto 2">
+            <div class="product-info">
+                <a href="../views/detail-4.html">
+                    <h3>Oversized white shirt with interactive design.</h3>
+                </a>
+                <p class="category">T-Shirt</p>
+                <div class="price-rating">
+                    <p class="price">$162.99</p>
+                    <img class="star" src="../storage/img/star.png" alt="Star">
+                    <p class="rating">5.0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-content"></div>
+    <!-- Footer -->
+    <footer class="bottom-nav">
+        <a href="../views/home.html" class="nav-item">
+            <img src="../storage/img/Home.png" alt="Inicio">
+        </a>
+        <a href="../views/checkout.html" class="nav-item">
+            <img src="../storage/img/Cart.png" alt="Carrito">
+            <span class="notification-dot"></span> <!-- Punto rojo de notificación -->
+        </a>
+        <a href="#" class="nav-item">
+            <img src="../storage/img/Favourite.png" alt="Favoritos">
+        </a>
+        <a href="#" class="nav-item">
+            <img src="../storage/img/Account.png" alt="Perfil">
+        </a>
+    </footer>
+</body>
+</html>
