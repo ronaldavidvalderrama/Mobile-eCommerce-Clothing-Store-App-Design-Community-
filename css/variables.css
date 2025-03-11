@@ -12,6 +12,8 @@
     --color-10: #433F40;
     --color-11: #171516;
     --color-12: #F6F6F6;
+    --color-12: #878787;
+    --color-13: #F6F6F6;
 }
 
 @font-face {
@@ -26,10 +28,13 @@
 
 @font-face {
     font-family: "EncodeSans-Medium";
-    src: url(../storage/font/Encode_Sans/static/EncodeSans-Regular.ttf);
+    src: url(../storage/font/Encode_Sans/static/EncodeSans-Medium.ttf);
 }
 
 @font-face {
     font-family: "EncodeSans-SemiBold";
     src: url(../storage/font/Encode_Sans/static/EncodeSans-SemiBold.ttf);
 }
+
+
+
