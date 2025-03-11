@@ -1,0 +1,95 @@
+@import url(variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-5);
+}
+
+/* Tarjeta principal */
+.promo-card {
+    position: relative;
+    width: 350px;
+    height: 650px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen de fondo */
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Oscurecer la imagen */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta el nivel de oscuridad */
+}
+
+/* Contenido sobre la imagen */
+.content {
+    position: relative;
+    text-align: center;
+    color: var(--color-6);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.content h1 {
+    font-family: "EncodeSans-Regular", sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.content p {
+    font-family: "EncodeSans-SemiBold", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.site {
+    font-family: "EncodeSans-SemiBold", sans-serif;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Botón */
+.botton {
+    background-color: var(--color-5);
+    padding: 12px 36px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+/* Enlace dentro del botón */
+.botton a {
+    text-decoration: none;
+    color: var(--color-6);
+    font-family: "EncodeSans-SemiBold", sans-serif;
+
+}
