@@ -1,0 +1,307 @@
+@import url(variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    padding: 24px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Bienvenida y perfil */
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome .text p{
+    font-family: "EncodeSans-Regular";
+    color: var(--color-1);
+    font-size: 12px;
+}
+
+
+.welcome h2 {
+    font-family: "EncodeSans-Bold";
+    font-size: 16px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.search-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 14px 16px;
+    position: relative;
+    border: 1px solid var(--color-4); 
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 35px;
+    background: transparent;
+}
+
+/* Ícono de búsqueda */
+.search-icon {
+    position: absolute;
+    left: 16px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Botón de filtros */
+.filter-btn {
+    background-color: var(--color-5);
+    border: none;
+    padding: 12px 12px;
+    border-radius: 10px;    
+}
+
+
+
+/* Contenedor de los botones */
+.filter-buttons {
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+}
+
+/* Botones de filtro */
+.filter {
+    font-family: "EncodeSans-medium";
+    background-color: var(--color-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-4);
+    flex: 1;
+    gap: 6px;
+    font-size: 14px;    
+    padding: 14px 12px;
+    border-radius: 12px;
+    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Botón activo */
+.filter.active {
+    background: var(--color-5);
+    color: var(--color-6);
+    border: 1px solid var(--color-5); 
+}
+
+/* Efecto hover */
+.filter:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Un gris claro */
+    border-color: var(--color-5);
+}
+
+/* Invertir solo las imágenes normales (no blancas) */
+.filter.active img:not(.invertible-icon) {
+    filter: invert(1) brightness(1000%);
+}
+
+/* Espaciado y tamaño de imágenes */
+.filter img {
+    width: 20px;
+    height: 20px;
+}
+
+.filter img.invertible-icon {
+    filter: invert(1);
+}
+
+.filter.active img.invertible-icon {
+    filter: invert(0);
+}
+
+
+.filter img {
+    width: 18px;
+    height: 18px;
+}
+
+/* 
+ **************MAIN SECTION*************  */
+        /*SECCION DE IMAGENES*/
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.product-card.tall {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+}
+
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+.price-rating img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-left: 24px;
+    margin-top: -3px;
+}
+
+.product-info h3{
+    font-family: "EncodeSans-semibold";
+    font-size: 14px;
+    color: var(--color-2);
+}
+
+.product-info a{
+    text-decoration: none;
+}
+
+.product-info .category{
+    font-family: "EncodeSans-regular";
+    font-size: 10px;
+    color: var(--color-1);
+    margin-top: 4px;
+}
+
+.price-rating .price{
+    font-family: "EncodeSans-semibold";
+    font-size: 14px;
+    color: var(--color-5);
+}
+
+.price-rating .rating{
+    font-family: "EncodeSans-regular";
+    font-size: 12px;
+    color: var(--color-5);
+}
+
+
+
+.price-rating {
+    display: flex;
+    margin-top: 12px;
+}
+
+
+
+.product-card{
+    position: relative; /* Para posicionar el corazón dentro del contenedor */
+    height: 100%;
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Corazón del producto */
+
+.favorite {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    background: var(--color-5);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: none;
+}
+
+.favorite img {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    margin-top: 8px;
+}
+
+
+/**************** FOOTER ***********************/
+
+.page-content {
+    padding-bottom: 40px; /* Espacio suficiente para ver el contenido en el footer */
+}
+
+.bottom-nav {
+    
+    box-shadow: 1px -35px 60px white; /* Sombra blanca */
+    position: fixed;
+    bottom: 20px; /* Lo separa un poco del borde */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 87%;
+    background: var(--color-5); 
+    padding: 10px 1px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+
+
+.nav-item img {
+    width: 35px;
+    height: 35px;
+}
+
+.nav-item {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-item:active {
+    transform: scale(0.85); /* Reduce el tamaño ligeramente */
+    opacity: 0.7; /* Disminuye la opacidad */
+}
+
+
+
+
+
