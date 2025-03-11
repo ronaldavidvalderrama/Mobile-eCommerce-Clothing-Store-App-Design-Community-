@@ -10,3 +10,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+function toggleFavorite(button) {
+    const img = button.querySelector("img");
+    const isFavorite = button.classList.toggle("active");
+
+    if (isFavorite) {
+        img.src = "../storage/img/heart-white.png"; // Cambia al corazón lleno
+    } else {
+        img.src = "../storage/img/heart-Icon.png"; // Vuelve al corazón vacío
+    }
+}

@@ -121,15 +121,15 @@ body {
 
 /* Botón activo */
 .filter.active {
-    background: #131111;
-    color: #fff;
-    border: 1px solid #fff; 
+    background: var(--color-5);
+    color: var(--color-6);
+    border: 1px solid var(--color-5); 
 }
 
 /* Efecto hover */
 .filter:hover {
     background-color: rgba(0, 0, 0, 0.3); /* Un gris claro */
-    border-color: #131111;
+    border-color: var(--color-5);
 }
 
 /* Invertir solo las imágenes normales (no blancas) */
@@ -240,25 +240,30 @@ body {
     flex-direction: column;
 
 }
+
 /* Corazón del producto */
 
 .favorite {
     position: absolute;
     top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     right: 10px;
-    background: var(--color-5); /* Un fondo semitransparente */
+    background: var(--color-5);
     border-radius: 50%;
     width: 24px;
     height: 24px;
+    border: none;
 }
 
 .favorite img {
     width: 16px;
     height: 16px;
-    cursor: pointer;
-    margin-left: 4px;
-    margin-top: 4px;
+    object-fit: cover;
+    margin-top: 8px;
 }
+
 
 /**************** FOOTER ***********************/
 
@@ -267,6 +272,7 @@ body {
 }
 
 .bottom-nav {
+    
     box-shadow: 1px -35px 60px white; /* Sombra blanca */
     position: fixed;
     bottom: 20px; /* Lo separa un poco del borde */
@@ -285,6 +291,16 @@ body {
     width: 35px;
     height: 35px;
 }
+
+.nav-item {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-item:active {
+    transform: scale(0.85); /* Reduce el tamaño ligeramente */
+    opacity: 0.7; /* Disminuye la opacidad */
+}
+
 
 
 
