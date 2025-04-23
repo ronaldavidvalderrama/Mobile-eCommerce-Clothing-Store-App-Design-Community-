@@ -16,11 +16,8 @@ Una aplicación móvil de eCommerce enfocada en la venta de ropa, diseñada para
 - **CSS**
 - **JavaScript**
 
-> Nota: Este repositorio está enfocado en la parte visual y estructural de la app móvil. No incluye backend.
+> Nota: Este repositorio está enfocado en la parte visual y estructural de la app móvil. No incluye backend mas aya del visual
 
-## 🖼️ Previsualización
-
-*(Agrega aquí capturas de pantalla o un GIF de la app si están disponibles)*
 
 ## 🚀 Cómo empezar
 
